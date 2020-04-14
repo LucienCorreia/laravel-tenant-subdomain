@@ -1,12 +1,12 @@
 <?php
 
-namespace Dlimars\Tenant\Routing;
+namespace Multiplier\Tenant\Routing;
 
 use InvalidArgumentException;
 use Illuminate\Routing\UrlGenerator as CoreUrlGenerator;
 use Illuminate\Routing\RouteCollection;
 use Illuminate\Http\Request;
-use Dlimars\Tenant\TenantManager;
+use Multiplier\Tenant\TenantManager;
 
 class UrlGenerator extends CoreUrlGenerator
 {
