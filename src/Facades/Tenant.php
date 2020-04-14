@@ -1,6 +1,6 @@
 <?php
 
-namespace Dlimars\Tenant\Facades;
+namespace Multiplier\Tenant\Facades;
 use Illuminate\Support\Facades\Facade;
 
 class Tenant extends Facade
