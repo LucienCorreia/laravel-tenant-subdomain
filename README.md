@@ -1,25 +1,11 @@
 # Laravel Tenant Subdomínio
-[![Build Status](https://travis-ci.org/dlimars/laravel-tenant-subdomain.svg)](https://travis-ci.org/dlimars/laravel-tenant-subdomain)
-[![Latest Stable Version](https://poser.pugx.org/dlimars/laravel-tenant-subdomain/v/stable)](https://packagist.org/packages/dlimars/laravel-tenant-subdomain)
-[![Total Downloads](https://poser.pugx.org/dlimars/laravel-tenant-subdomain/downloads)](https://packagist.org/packages/dlimars/laravel-tenant-subdomain)
-[![Latest Unstable Version](https://poser.pugx.org/dlimars/laravel-tenant-subdomain/v/unstable)](https://packagist.org/packages/dlimars/laravel-tenant-subdomain)
-[![License](https://poser.pugx.org/dlimars/laravel-tenant-subdomain/license)](https://packagist.org/packages/dlimars/laravel-tenant-subdomain)
 
 Este pacote irá auxiliar na organização de clientes em subdomínios usando Laravel.
 
 ## Instalação
-Adicione no seu `composer.json`
-
-```js
-"require": {
-    //..
-        "dlimars/laravel-tenant-subdomain": "^1.0"
-    },
+Execute em seu terminal
 ```
-
-ou execute em seu terminal
-```
-    composer require dlimars/laravel-tenant-subdomain
+    composer require multiplier/laravel-tenant-subdomain
 ```
 
 adicione o provider e o facade em `config/app.php`:
@@ -27,12 +13,12 @@ adicione o provider e o facade em `config/app.php`:
 ```php
 'providers' => [
     // outros providers
-    Dlimars\Tenant\Providers\TenantServiceProvider::class,
+    Multiplier\Tenant\Providers\TenantServiceProvider::class,
 ],
 
 'aliases' => [
     // outros aliases
-    'Tenant' => Dlimars\Tenant\Facades\Tenant::class,
+    'Tenant' => Multiplier\Tenant\Facades\Tenant::class,
 ]
 ```
 
@@ -41,7 +27,7 @@ adicione o middleware em `app/Http/Kernel.php`
 ```php
 protected $routeMiddleware = [
     // outros middlewares
-    'tenant.database' => \Dlimars\Tenant\Middlewares\TenantDatabase::class
+    'tenant.database' => \Multiplier\Tenant\Middlewares\TenantDatabase::class
 ];
 ```
 
