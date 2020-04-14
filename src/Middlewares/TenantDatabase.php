@@ -1,8 +1,8 @@
 <?php
 
-namespace Dlimars\Tenant\Middlewares;
+namespace Multiplier\Tenant\Middlewares;
 
-use Dlimars\Tenant\TenantManager;
+use Multiplier\Tenant\TenantManager;
 use Closure;
 
 class TenantDatabase
