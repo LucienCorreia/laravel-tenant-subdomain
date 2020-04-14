@@ -1,6 +1,6 @@
 <?php
 
-namespace Dlimars\Tenant;
+namespace Multiplier\Tenant;
 
 use Illuminate\Config\Repository as ConfigRepository;
 use Illuminate\Database\DatabaseManager;
