@@ -1,11 +1,11 @@
 <?php
 
-namespace Dlimars\Tenant\Providers;
+namespace Multiplier\Tenant\Providers;
 
-use Dlimars\Tenant\TenantManager;
+use Multiplier\Tenant\TenantManager;
 use Illuminate\Routing\RoutingServiceProvider;
-use Dlimars\Tenant\Routing\UrlGenerator;
-use Dlimars\Tenant\Routing\routes;
+use Multiplier\Tenant\Routing\UrlGenerator;
+use Multiplier\Tenant\Routing\routes;
 
 class TenantServiceProvider extends RoutingServiceProvider
 {
