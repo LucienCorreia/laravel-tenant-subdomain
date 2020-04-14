@@ -1,6 +1,6 @@
 <?php
 
-use Dlimars\Tenant\TenantManager;
+use Multiplier\Tenant\TenantManager;
 
 class TenantManagerTest extends PHPUnit_Framework_TestCase
 {
